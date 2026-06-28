@@ -16,19 +16,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: ListView(
           children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage(
-                'https://media.houseandgarden.co.uk/photos/62fa5a2236fcbc4f6a417055/master/w_1600,c_limit/K0MDRF.jpg',
+            SizedBox(
+              width:50,
+              height:50,
+              child: Image(
+                image: AssetImage(
+                  'images/images.jpg',
+                ),
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover,
               ),
-            ),
-            Image(
-              image: NetworkImage(
-                'https://media.houseandgarden.co.uk/photos/62fa5a2236fcbc4f6a417055/master/w_1600,c_limit/K0MDRF.jpg',
-              ),
-              width: 100,
-              height: 100,
-              fit: BoxFit.cover,
             ),
             SizedBox(height: 100),
             Text(
